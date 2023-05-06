@@ -25,12 +25,34 @@ align-items: center;
 padding: 10px 14px;
 }
 .image-content{
+    position: relative;
     row-gap: 5px;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#4070F4 ;
+    border-radius: 25px 25px 0 25px;
+
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 0;
+    bottom: -40px;
+    background-color: red;
 }
 .card-image{
     position: relative;
-    height: 300px;
-    width: 200px;
+    height: 220px;
+    width: 158px;
     object-fit: cover;
     border-radius: 50%;
     background: #FFF;
@@ -68,4 +90,5 @@ width: 300px;
 }
 .button:hover{
     background: #265DF2;
+    font-size: 16.3px;
 }
