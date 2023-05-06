@@ -27,6 +27,7 @@ padding: 10px 14px;
 .image-content{
     position: relative;
     row-gap: 5px;
+    padding: 25px 0;
 }
 .overlay{
     position: absolute;
@@ -47,7 +48,11 @@ padding: 10px 14px;
     width: 40px;
     right: 0;
     bottom: -40px;
-    background-color: red;
+    background-color: #4070F4;
+}
+.overlay::after{
+    background-color: #FFF;
+    border-radius: 0 25px 0 0;
 }
 .card-image{
     position: relative;
@@ -76,6 +81,7 @@ font-size: 14px;
 color: #707070;
 text-align: center;
 width: 300px;
+margin-top: 6px;
 }
 .button{
     border: none;
